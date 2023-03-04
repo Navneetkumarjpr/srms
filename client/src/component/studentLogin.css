@@ -1,0 +1,92 @@
+.studentLogin{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(78, 76, 76);
+}
+.studentLoginContainer{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+    padding: 20px 20px;
+    background-color: rgb(238, 217, 233);
+    border-radius: 5px;
+}
+.emailInput{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 15px;
+    outline: none;
+    background: none;
+}
+.passwordInput{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-top: 15px;
+    background: none;
+    outline: none;
+}
+.loginButton{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: pink;
+}
+
+.loginButton:hover{
+    background-color: rgb(250, 110, 133);
+}
+
+.studentcomplaints{
+    width: 40%;
+    border-right: 2px solid white;
+    height: 40vh;
+    overflow-y: auto;
+}
+.studentannouncement{
+    width: 40%;
+    height: 40vh;
+}
+.allAnnouncement{
+    width: 100%;
+    height: 30vh;
+    overflow-y: auto;
+}
+
+
+.allAnnouncement :first-child{
+    animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    from {color: rgb(55, 0, 255);}
+    to {color: rgb(124, 245, 108);}
+  }
+  
+.studentcomplaints h1{
+    padding-left: 35px;
+}
+.studentannouncement h1{
+    padding-left: 35px;
+}

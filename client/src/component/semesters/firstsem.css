@@ -1,0 +1,46 @@
+.firstsem{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 187, 194);
+    align-items: center;
+}
+.firstsem h1{
+    color: white;
+    padding: 10px 10px;
+}
+.innerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.marksContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+.addResultButton{
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: rgb(240, 93, 117);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.totalmarksHead{
+    border: none;
+    outline: none;
+}

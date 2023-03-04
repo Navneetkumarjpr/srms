@@ -1,0 +1,79 @@
+.reportCard{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: pink;
+    min-height: 100vh;
+}
+.reportCardHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.reportCardHeading h1{
+    font-weight: 400;
+}
+.studentLogoutButton{
+    margin-left: 50px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: rgb(253, 127, 148);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.singleResult{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom: 120px;
+    /* height: 50vh; */
+}
+.personalnfo{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /* border: 2px solid gray; */
+    padding: 10px 10px;
+}
+.nameInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 7px 0;
+}
+.nameInfo h1{
+    color: rgb(27, 26, 26);
+    font-size: 25px;
+    font-weight: 400;
+}
+.nameInfo h2{
+    color:  gray;
+}
+table {
+    border: 2px solid gray;
+    width: 70vw;
+    /* height: x; */
+  }
+    
+  th {
+    padding: 7px 0;
+    /* border-bottom: 1px solid black; */
+  }
+  tr{
+    border: 2px solid black;
+  }
+  td {
+    text-align: center;
+    padding: 7px 0;
+    border: 2px solid gray;
+  }
+  .resultNot{
+      font-size: 30px;
+      margin-top: 20%;
+  }
