@@ -83,7 +83,7 @@ function App() {
   }
   const loadContactList= async () =>{
     try {
-     await axios.post("http://localhost:8805/addsemresult",student);
+     await axios.post("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/addsemresult",student);
      alert("result added");
      student.name="";
      student.rollnumber="";
@@ -136,7 +136,7 @@ const totalMarksUpdated = async()=>{
 const resultLoadContactList= async () =>{
   try {
     console.log(student.semester," ",student.branch)
-   await axios.put(`http://localhost:8805/semresultupdate/${student.semester}/${student.rollnumber}`,student);
+   await axios.put(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/semresultupdate/${student.semester}/${student.rollnumber}`,student);
    alert("result updated");
    student.name="";
    student.rollnumber="";

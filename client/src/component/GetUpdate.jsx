@@ -26,7 +26,7 @@ const GetUpdate = () => {
     }
     const loadContactList= async () =>{
       try {
-       const data=await axios.get(`http://localhost:8805/getResult/${student.rollnumber}/${student.semester}`);
+       const data=await axios.get(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/getResult/${student.rollnumber}/${student.semester}`);
        console.log('datata  ',data);
        alert("result found");
        history.push(`/updateResult/${student.rollnumber}/${student.semester}`);

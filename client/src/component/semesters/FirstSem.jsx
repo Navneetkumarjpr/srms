@@ -7,7 +7,7 @@ const FirstSem = ({sem,setStudent,setSem,branch,student, values, addResultData})
   useEffect(() => {
     setSem(choiceSem.sem);
     const fetchSubject=async()=>{
-      const data  = await  axios.get(`http://localhost:8805/getsubject/${choiceSem.sem}/${branch}`)
+      const data  = await  axios.get(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/getsubject/${choiceSem.sem}/${branch}`)
       console.log("data ",data.data);
       student.name="";
       student.rollnumber="";

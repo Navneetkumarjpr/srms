@@ -11,12 +11,12 @@ const ReportCard = () => {
     useEffect(() => {
       const fetchResult= async()=>{
           try {
-            const res = await axios.get(`http://localhost:8805/reportcard/${rollnumber.rollnumber}`)
+            const res = await axios.get(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/reportcard/${rollnumber.rollnumber}`)
             // setStudentLogged(res.data);
             setResults(res.data);
             
-            console.log("logged hai ",studentLogged);
-            console.log(res.data);
+            // console.log("logged hai ",studentLogged);
+            // console.log(res.data);
           } catch (error) {
               console.log("res error ", error)
           }

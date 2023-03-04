@@ -32,7 +32,7 @@ const UpdateSub = () => {
       }
         const loadContactList= async () =>{
           try {
-           const data=await axios.put(`http://localhost:8805/subjectupdate/${semester}/${branch}`,subjects);
+           const data=await axios.put(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/subjectupdate/${semester}/${branch}`,subjects);
            console.log("dtata ",data.data);
         //    setSubjects(});
            alert("result added");

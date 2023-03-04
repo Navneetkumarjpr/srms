@@ -28,7 +28,7 @@ const AddNewStudent = () => {
   }
   const loadContactList= async () =>{
     try {
-      await axios.post("http://localhost:8805/newstudent",student);
+      await axios.post("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/newstudent",student);
       console.log("added");
       history.push("/studentchoice");
     } catch (error) {

@@ -9,7 +9,7 @@ const GetStudentDetail = () => {
     useEffect(() => {
              const getDetail = async()=>{
                  try {
-                     const data = await axios.get(`http://localhost:8805/getDetail/${roll.studentRoll}`)
+                     const data = await axios.get(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/getDetail/${roll.studentRoll}`)
                      console.log(data.data);
                      if(data.data.length===0){
                         alert("Student Detail not Found");

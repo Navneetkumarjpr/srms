@@ -19,7 +19,7 @@ const StudentChoice = () => {
   }
   const sendPoints=async()=>{
     try {
-        await axios.post("http://localhost:8805/collegePoints",points);
+        await axios.post("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/collegePoints",points);
         setPoints("");
       alert("sended")
     // sendPoints("");

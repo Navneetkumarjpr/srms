@@ -6,7 +6,7 @@ const UpdateRes = ({student,setStudent,values,getResultData}) => {
     useEffect(() => {
         // setSem(choiceSem.sem);
         const fetchSubject=async()=>{
-          const data  = await  axios.get(`http://localhost:8805/getResult/${rollnumber}/${semester}`)
+          const data  = await  axios.get(`https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/getResult/${rollnumber}/${semester}`)
           console.log("data ",data.data);
           student.name=data.data[0].name;
           student.rollnumber=data.data[0].rollnumber;

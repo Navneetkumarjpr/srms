@@ -32,7 +32,7 @@ const StudentLogin = () => {
   }
   const loadContactList= async () =>{
     try {
-     const loginstudent= await axios.post("http://localhost:8805/studentlogin",student);
+     const loginstudent= await axios.post("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/studentlogin",student);
      setStudentLogged(loginstudent.data);
      if(loginstudent!==null){
       console.log("student logged ",studentLogged);
@@ -60,7 +60,7 @@ const StudentLogin = () => {
   }
   const sendPoints=async()=>{
     try {
-        await axios.post("http://localhost:8805/complaintsPoints",points);
+        await axios.post("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/complaintsPoints",points);
         // setAllPoints("");
         setPoints("")
       alert("sended")
@@ -72,7 +72,7 @@ const StudentLogin = () => {
 
           useEffect(() => {
             const getPoints=async()=>{
-              const data= await axios.get("http://localhost:8805/getcollegePoints");
+              const data= await axios.get("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/getcollegePoints");
               console.log(data.data);
               setAllPoints(data.data.reverse());
              }

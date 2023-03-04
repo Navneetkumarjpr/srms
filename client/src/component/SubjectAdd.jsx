@@ -48,7 +48,7 @@ const SubjectAdd = () => {
     }
       const loadContactList= async () =>{
         try {
-         const data=await axios.post("http://localhost:8805/addsubjects",subjects);
+         const data=await axios.post("https://main-srms-backend-k1yr68eci-navneetkumarjpr.vercel.app/addsubjects",subjects);
          console.log(data.data);
          alert("result added");
         //  setSubjects({...subjects,
